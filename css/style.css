@@ -56,12 +56,27 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .banner {
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+  }
+}
 .banner .text {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 6.4rem;
   padding-inline: 6.4rem;
+}
+@media screen and (max-width: 768px) {
+  .banner .text {
+    padding-inline: 2.4rem;
+    margin-top: 3.2rem;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .banner .text .greet {
   font-family: "neue_montreallight", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -71,6 +86,12 @@ a {
   text-align: center;
   width: 75%;
   margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .banner .text .greet {
+    width: 100%;
+    font-size: 3.2rem;
+  }
 }
 .banner .text .greet span {
   font-family: "neue_montrealbold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -85,11 +106,21 @@ a {
   justify-content: center;
   margin-top: 3.2rem;
 }
+@media screen and (max-width: 768px) {
+  .banner .text .text-content {
+    flex-direction: column;
+  }
+}
 .banner .text .text-content .para-content {
   font-family: "neue_montreallight", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   width: 25%;
+}
+@media screen and (max-width: 768px) {
+  .banner .text .text-content .para-content {
+    width: 100%;
+  }
 }
 .banner .text .text-content .para-content span {
   font-family: "neue_montrealbold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -105,6 +136,12 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .banner .text .text-content .link-content {
+    width: 100%;
+    margin-top: 3.2rem;
+  }
+}
 .banner .text .text-content .link-content .link-text {
   font-family: "neue_montrealregular", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2.4rem;
@@ -115,6 +152,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  .banner .text .text-content .link-content .link-container {
+    flex-direction: column;
+    row-gap: 2.4rem;
+  }
 }
 .banner .text .text-content .link-content .link-container .link {
   padding: 1rem 2.2rem;
@@ -146,6 +189,11 @@ a {
   margin-top: auto;
   margin-bottom: 3.2rem;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .banner .link-section {
+    width: 90%;
+  }
 }
 .banner .link-section p {
   height: inherit;
@@ -179,6 +227,11 @@ a {
   flex-shrink: 0;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .slideshow-container .slideshow .text {
+    font-size: 1.6rem;
+  }
+}
 
 .resume {
   margin-top: 3.2rem;
@@ -197,6 +250,11 @@ a {
   padding-bottom: 2.4rem;
   border-bottom: solid 1px #f7f3f2;
 }
+@media screen and (max-width: 768px) {
+  .resume .title {
+    margin-left: 2.4rem;
+  }
+}
 .resume .exp-container {
   width: 100%;
   display: flex;
@@ -204,16 +262,37 @@ a {
   margin-top: 3.2rem;
   padding-left: 6.4rem;
 }
+@media screen and (max-width: 768px) {
+  .resume .exp-container {
+    padding-left: 2.4rem;
+  }
+}
 .resume .exp-container .exp {
   margin-top: 3.2rem;
   position: relative;
   height: 18.4rem;
 }
+@media screen and (max-width: 768px) {
+  .resume .exp-container .exp {
+    height: 22rem;
+    margin-top: 6.4rem;
+  }
+}
 .resume .exp-container .exp:nth-child(2) .content {
   margin-left: 12.8rem;
 }
+@media screen and (max-width: 768px) {
+  .resume .exp-container .exp:nth-child(2) .content {
+    margin-left: 0;
+  }
+}
 .resume .exp-container .exp:nth-child(3) .content {
   margin-left: 19.2rem;
+}
+@media screen and (max-width: 768px) {
+  .resume .exp-container .exp:nth-child(3) .content {
+    margin-left: 0;
+  }
 }
 .resume .exp-container .exp .content {
   display: flex;
@@ -221,6 +300,12 @@ a {
   row-gap: 1rem;
   width: 45%;
   position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .resume .exp-container .exp .content {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .resume .exp-container .exp .content .year {
   font-family: "neue_montreallight", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -264,6 +349,11 @@ a {
   padding-bottom: 2.4rem;
   border-bottom: solid 1px #f7f3f2;
 }
+@media screen and (max-width: 768px) {
+  .horizontal .title {
+    margin-left: 2.4rem;
+  }
+}
 
 .project-container {
   height: 100vh;
@@ -281,8 +371,21 @@ a {
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .project-container .project {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 2.4rem;
+  }
+}
 .project-container .project .project-thumb {
   width: 80%;
+}
+@media screen and (max-width: 768px) {
+  .project-container .project .project-thumb {
+    width: 100%;
+    height: 45%;
+  }
 }
 .project-container .project .project-thumb img {
   width: 100%;
@@ -300,6 +403,15 @@ a {
   padding-block: 3.2rem;
   padding-left: 2.4rem;
   border-left: solid 3px #4353ff;
+}
+@media screen and (max-width: 768px) {
+  .project-container .project .project-content {
+    width: 100%;
+    border-left: none;
+    border-top: solid 3px #4353ff;
+    margin-top: 3.2rem;
+    padding-left: 0;
+  }
 }
 .project-container .project .project-content .client {
   font-family: "neue_montrealbold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -336,4 +448,10 @@ a {
   font-size: 1.6rem;
   background: #4353ff;
   border-radius: 999px;
+}
+@media screen and (max-width: 768px) {
+  .project-container .project .project-content .link-live {
+    margin-bottom: 2.4rem;
+    margin-top: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
