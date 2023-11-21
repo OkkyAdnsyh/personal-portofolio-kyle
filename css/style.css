@@ -1,24 +1,24 @@
 @font-face {
   font-family: "neue_montrealbold";
-  src: url("./public/Fonts/neuemontreal-bold-webfont.woff2") format("woff2"), url("./public/Fonts/neuemontreal-bold-webfont.woff") format("woff");
+  src: url("/Fonts/neuemontreal-bold-webfont.woff2") format("woff2"), url("/Fonts/neuemontreal-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "neue_montreallight";
-  src: url("./public/Fonts/neuemontreal-light-webfont.woff2") format("woff2"), url("./public/Fonts/neuemontreal-light-webfont.woff") format("woff");
+  src: url("/Fonts/neuemontreal-light-webfont.woff2") format("woff2"), url("/Fonts/neuemontreal-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "neue_montrealmedium";
-  src: url("./public/Fonts/neuemontreal-medium-webfont.woff2") format("woff2"), url("./public/Fonts/neuemontreal-medium-webfont.woff") format("woff");
+  src: url("/Fonts/neuemontreal-medium-webfont.woff2") format("woff2"), url("/Fonts/neuemontreal-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "neue_montrealregular";
-  src: url("./public/Fonts/neuemontreal-regular-webfont.woff2") format("woff2"), url("./public/Fonts/neuemontreal-regular-webfont.woff") format("woff");
+  src: url("/Fonts/neuemontreal-regular-webfont.woff2") format("woff2"), url("/Fonts/neuemontreal-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -185,7 +185,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .resume .title {
   font-family: "neue_montreallight", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
